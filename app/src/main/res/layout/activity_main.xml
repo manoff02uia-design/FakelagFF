@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#0D0D0D">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAKE LAG FF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#00C853"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Fire Network Tool"
+        android:textSize="13sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Fake Lag slider -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1A1A1A"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FAKE LAG DELAY"
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_lag_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150 ms"
+                android:textColor="#00C853"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seek_lag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500"
+            android:progress="150"
+            android:thumbTint="#00C853"
+            android:progressTint="#00C853"/>
+    </LinearLayout>
+
+    <!-- ON/OFF button -->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="○ OFF  —  bấm để BẬT"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#212121"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Info box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1A1A1A"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sau khi BẬT:"
+            android:textColor="#888888"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• FREEZE  →  đứng im trên server\n• GHOST    →  di chuyển không đến server\n• TELE      →  nhảy vị trí tức thì\n\nKéo bảng điều khiển bằng ngón tay."
+            android:textColor="#666666"
+            android:textSize="11sp"
+            android:lineSpacingExtra="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#CC000000"
+    android:padding="8dp"
+    android:minWidth="130dp">
+
+    <!-- Title bar (drag handle) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚡ FAKE LAG"
+        android:textColor="#00C853"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="6dp"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="○ OFF"
+        android:textColor="#888888"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:paddingBottom="6dp"/>
+
+    <!-- FREEZE button -->
+    <Button
+        android:id="@+id/btn_freeze"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="FREEZE"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:backgroundTint="#212121"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- GHOST button -->
+    <Button
+        android:id="@+id/btn_ghost"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="GHOST"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:backgroundTint="#212121"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- TELE button -->
+    <Button
+        android:id="@+id/btn_tele"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="TELE"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:backgroundTint="#212121"/>
+
+</LinearLayout>
